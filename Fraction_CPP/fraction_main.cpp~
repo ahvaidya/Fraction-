@@ -1,0 +1,15 @@
+#inclue "fraction.cpp"
+#include <iostream>
+using namespace std;
+
+void main()
+{
+  Fraction a(1,3);
+  Fraction b(3,28);
+  Fraction c;
+
+    c = a + b;
+    cout << c << "\t(should be 37/84)" << endl;
+
+
+}

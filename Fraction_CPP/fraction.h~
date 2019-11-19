@@ -1,0 +1,36 @@
+#include <iostream>
+#include <Cmath>
+using namespace std;
+
+Class Fraction
+{
+private:
+        int num,
+        int den;
+            
+    public:
+        Fraction();
+        Fraction(int,int);
+
+        virtual ~Fraction(){};
+        
+        void setFract(int num1, int den1);
+        void getFract(int & num1, int & den1);
+        
+        Fraction operator+(const Fraction & fraction) const;
+        Fraction operator-(const Fraction & fraction) const;
+        Fraction operator/(const Fraction & fraction) const;
+        Fraction operator*(const Fraction & fraction) const;
+        
+        /* bool operator<(const Fraction & fraction) const; */
+        /* bool operator>(const Fraction & fraction) const; */
+        /* bool operator<=(const Fraction & fraction) const; */
+        /* bool operator>=(const Fraction & fraction) const; */
+        /* bool operator==(const Fraction & fraction) const; */
+
+
+
+
+        /* bool operator!=(const Fraction & fraction) const; */
+
+}
